@@ -302,7 +302,6 @@ elif page == "02 · Diagnóstico operacional":
 
 # ----------------------------- Page 3 -----------------------------
 elif page == "03 · Delivery Risk":
-    st.markdown('<div class="warning"><b>Modo atual: monitoramento operacional.</b> O modelo de Machine Learning ainda não está treinado com a base Olist. Portanto, esta página não apresenta scores preditivos fictícios. Os sinais abaixo vêm dos campos observados na planilha.</div>',unsafe_allow_html=True)
     eligible_n=int(open_eligible.shape[0])
     late_n=int(trusted["Resultado_norm"].isin(["Em transito atrasado","Entregue atrasado","Nao entregue"]).sum())
     ontime_open=int(trusted["Resultado_norm"].eq("Em transito no prazo").sum())
