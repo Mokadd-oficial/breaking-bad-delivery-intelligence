@@ -1,0 +1,11 @@
+services:
+  breaking-bad:
+    build: .
+    ports:
+      - "127.0.0.1:8501:8501"
+    environment:
+      - APP_PASSWORD=${APP_PASSWORD:?Defina APP_PASSWORD no arquivo .env}
+    volumes:
+      - ./models:/app/models
+      - ./data/olist:/app/data/olist:ro
+    restart: unless-stopped

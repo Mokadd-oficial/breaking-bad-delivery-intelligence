@@ -1,0 +1,53 @@
+{
+  "model_name": "random_forest",
+  "trained_at_utc": "2026-11-10T17:13:44.662278+00:00",
+  "training_rows": 81999,
+  "validation_rows": 14470,
+  "test_rows": 14471,
+  "train_period": [
+    "2016-09-15 12:16:38",
+    "2018-04-15 20:12:35"
+  ],
+  "test_period": [
+    "2018-06-21 08:41:07",
+    "2018-08-29 15:00:37"
+  ],
+  "validation_metrics": {
+    "logistic_regression": {
+      "pr_auc": 0.09969691199181721,
+      "precision": 0.08373151308304892,
+      "recall": 0.5897435897435898,
+      "f1": 0.14664275752141862,
+      "prevalence": 0.04312370421561852
+    },
+    "random_forest": {
+      "pr_auc": 0.10097559954752235,
+      "precision": 0.11988636363636364,
+      "recall": 0.33814102564102566,
+      "f1": 0.17701342281879195,
+      "prevalence": 0.04312370421561852
+    }
+  },
+  "test_metrics": {
+    "pr_auc": 0.04523835459486347,
+    "precision": 0.04614767255216693,
+    "recall": 0.18548387096774194,
+    "f1": 0.07390745501285347,
+    "prevalence": 0.04284430930827172,
+    "top_20pct_delay_rate": 0.045250431778929186,
+    "top_20pct_lift": 1.0561596746336843
+  },
+  "features": [
+    "purchase_month",
+    "purchase_weekday",
+    "purchase_hour",
+    "promised_days",
+    "customer_state",
+    "zip_prefix",
+    "item_count",
+    "total_price",
+    "total_freight"
+  ],
+  "target": "delivery_after_promised_calendar_day",
+  "warning": "Academic Olist model; not validated for current Mercado Livre operations."
+}
