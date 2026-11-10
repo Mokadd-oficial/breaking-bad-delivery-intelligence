@@ -9,9 +9,6 @@ Aplicação local de analytics logístico com quatro páginas interativas, inspi
 3. **Delivery Risk Intelligence** — sinais operacionais de atraso, fila de acompanhamento e prontidão para inferência.
 4. **Modelo & qualidade** — confiabilidade das promessas, qualidade dos dados, elegibilidade e métricas do modelo quando treinado.
 
-O pacote inclui uma cópia da planilha de demonstração fornecida para que o dashboard abra já preenchido. Você também pode trocar a base pelo upload na barra lateral.
-
-> **Importante:** a base atual contém 1.871 registros, mas somente 30 possuem promessa confiável com origem `captura_inicial`; 13 registros são elegíveis para futura inferência segundo as regras atuais. O modelo Olist ainda não foi treinado porque os CSVs oficiais não foram fornecidos. Por isso, a página Delivery Risk mostra sinais operacionais observados, não scores de Machine Learning inventados.
 
 ## Como executar no Windows
 
